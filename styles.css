@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 95vw;
+    height: 90vh;
+}
+
+nav{
+    display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+
+nav .logo{
+    font-weight: 800;
+    font-size: 90px;
+    width: 50%;
+    padding-left: 80px;
+}
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 190px;
+    width: 50%;
+}
+nav .openMenu{
+    margin-top: 50px;
+    display: none;
+}
+nav .mainMenu .closeMenu, .icons i{
+    display: none;
+}
+li{
+    padding-right: 30px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(69, 69, 92)
+}
+li:active{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+#sect{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    padding-left: 80px;
+    margin-right: 20px;
+}
+img{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 15px;
+}
+.desc{
+    width:100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    width: 50%;
+    height: 90%;
+    font-size: 48px;
+    font-weight: 800;
+    padding-right: 10px;
+}
+.dive{
+    width: 50%;
+    margin-top: 10px;
+}
+h3{
+    font-size:15px;
+    margin-bottom: 30px;
+}
+button{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    padding: 10px;
+    width: 140px;
+    height: 50px;
+    border: none;
+}
+.seco{
+    width: 20%;
+    height: 90%;
+    background-color: hsl(240, 100%, 5%);
+    padding: 10px;
+}
+.new{
+    border-bottom: 3px solid hsl(233, 8%, 79%);
+}
+h4{
+    font-size: 35px;
+    color: hsl(35, 77%, 62%);
+    padding-top: 10px;
+}
+p.one{
+    color: hsl(36, 100%, 99%);
+    padding-top: 20px;
+}
+p.two{
+    color:hsl(233, 8%, 79%);
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.new:last-child{
+    border-bottom: none;
+}
+.sio{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.img1{
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    height: 100%;
+    padding-left: 80px;
+    margin-right: 10px;   
+}
+.est{
+    width: 40%;
+    height: 100%;
+    margin-right: 20px;
+}
+.ser{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h5{
+    font-size: 25px;
+    color:  hsl(233, 8%, 79%);
+    padding-bottom: 10px;
+}
+p.ret{
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+p.res{
+    font-size: 14px;
+}
+
+@media(max-width: 375px){
+    nav .mainMenu{
+        height: 100vh;
+        position:fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+        padding-left: 30px;
+        background: white;
+        transition: top 1s ease;
+        display: none;  
+    }
+    li{
+        margin-bottom: 30px;
+        color: black;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 100px;
+    }
+    nav .openMenu{
+        display: block;
+        margin-top: 70px;
+
+     
+    }
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #sect{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 50%; */
+        /* padding-left: 80px;
+        margin-right: 20px; */
+    }
+    .desc{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        width: 90%;
+        font-size: 40px;
+        font-weight: 800;
+        padding-right: 10px;
+    }
+    .dive{
+        width: 100%;
+        margin-top: 30px;
+    }
+    h3{
+        font-size:20px;
+        margin-bottom: 30px;
+    }
+    button{
+        background-color: hsl(5, 85%, 63%);
+        color: white;
+        padding: 10px;
+        width: 140px;
+        height: 50px;
+        border: none;
+    }
+    .seco{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        margin-left: 80px;
+        /* height: 50%; */
+        background-color: hsl(240, 100%, 5%);
+        padding: 10px;
+    }
+    .sio{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 600px;
+    }
+    .img1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* height: 100%; */
+        padding-left: 80px;
+        margin-right: 10px; 
+        margin-bottom: 30px;  
+    }
+    .attribution{
+        display: none;
+    }
+}
